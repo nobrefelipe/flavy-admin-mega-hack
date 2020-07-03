@@ -1,29 +1,9 @@
-# restaurant-admn
+# Flavy Admin App (Mega Hack Shawee)
 
-## Project setup
-```
-npm install
-```
+Webapp desenvolvida no Hackaton da Shawee
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Flavy é uma webapp que visa trazer mais rapidez na hora de ordenar e pagar por comida e bebida em restaurantes e bares.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Com Flavy os clientes navegam pelo menu diretamente pelo smartphone, fazem o pedido sem tempo de espera e pagam rapidamente, sem precisar fazer o download de nenhum aplicativo.
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Esse é o app responsavel pelo gerenciamente lado restaurante
