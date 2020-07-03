@@ -1,0 +1,242 @@
+.orders{
+
+  .view-header{ background: #fff; border-bottom: 1px solid #ededed}
+
+  &-body{
+
+    float: left;
+
+    width: 100%;
+
+    padding-top: 50px;
+
+    &.processing{
+
+      opacity: 0.2;
+
+    }
+
+  }
+
+  .order-id{
+
+    float: left;
+
+    width: 100%;
+
+    padding: 20px 20px;
+
+    color: #333;
+
+  }
+
+  &-item{
+
+    position: relative;
+
+    float: left;
+
+    width: 100%;
+
+    padding: 10px 20px 20px 0;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+
+    &:not(:last-of-type){
+
+      border-bottom: 2px dashed rgba(0,0,0,0.08);
+
+    }
+
+    figure{
+
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+
+      float: left;
+
+
+      img{
+
+        max-height: 70px;
+
+        object-fit: contain;
+
+      }
+
+    }
+
+    & > div{
+
+      width: calc(100% - 100px);
+      min-width: calc(100% - 100px);
+      max-width: calc(100% - 100px);
+
+    }
+
+
+    &--title{
+
+      float: left;
+
+      width: 70%;
+
+      font-size: 22px;
+
+      color: var(--color-secondary);
+
+
+      margin-bottom: 10px;
+
+      @extend %futura;
+
+    }
+
+    &--edited,
+    &--toppings{
+
+      float: left;
+
+      width: 70%;
+
+      font-size: 13px;
+
+      color: var(--color-secondary);
+
+      opacity: 0.5;
+
+      line-height: 18px;
+
+    }
+
+    &--total{
+
+      position: absolute;
+
+      bottom: 40px;
+
+      right: 20px;
+
+      font-size: 16px;
+
+      color: var(--color-primary);
+
+      @extend %futura;
+
+    }
+
+    &--delete{
+
+      position: absolute;
+
+      top: 15px;
+
+      right: 0px;
+
+      width: 50px;
+
+      height: 40px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 20px;
+
+      opacity: 0.5;
+
+    }
+
+  }
+
+
+  .total{
+
+    float: left;
+
+    width: 100%;
+
+    padding: 0 0 10px 0;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    @extend %futura;
+
+    span{
+
+      font-size: 22px;
+
+      font-weight: 600;
+
+
+      &.total-amount{ color: var(--color-primary); margin-left: 30px}
+
+    }
+
+  }
+
+
+
+  /**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+  #payment-form .StripeElement {
+    box-sizing: border-box;
+
+    height: 40px;
+
+    padding: 10px 12px;
+
+
+    border-radius: 5px;
+    background-color: white;
+
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    transition: box-shadow 150ms ease;
+
+    border: 1px solid #999;
+
+  }
+
+  #payment-form .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+
+  #payment-form .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+
+  #payment-form .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+
+}
+
+.pay-widget{
+
+  width: 100%;
+
+  padding: 15px 20px;
+
+  background: #fff;
+
+  position: fixed;
+
+  bottom: 0;
+
+  left: 0;
+
+  z-index: 10;
+
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+
+}

@@ -1,0 +1,206 @@
+
+/*
+  VIEWPORT SETTINGS
+*/
+%view-reset{
+  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
+
+}
+
+
+
+/*
+  HTML/BODY
+*/
+html, body{
+
+
+  scroll-behavior: smooth;
+
+
+}
+
+
+/*
+  APP
+*/
+#app{@extend %view-reset;}
+
+
+
+
+/*
+  VIEW WRAPPER
+*/
+.view-wrapper{
+
+  float: left;
+
+  background: #f3f3f3;
+
+  padding-top: 20px;
+
+  @extend %view-reset;
+
+}
+
+
+/*
+  WRAPPER
+*/
+.wrapper{
+
+  float: left;
+
+  display: flex;
+
+  width: 100%;
+
+  padding: 20px;
+
+}
+
+
+/*
+  IMAGE SETTINGS
+*/
+figure{
+
+  width: 100%;
+
+  height: 100%;
+
+  transition: all .3s cubic-bezier(.28,.8,.28,.8);
+
+  margin: 0 !important;
+
+  overflow: hidden;
+
+  display: flex !important;
+
+  justify-content: center;
+
+  img{
+
+    width: auto;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: 50% 50%;
+
+    transition: all .3s cubic-bezier(.28,.8,.28,.8);
+
+    &.landscape{ width: 100%; object-fit: cover}
+    &.portrait{ height: 100%; object-fit: contain}
+
+    &.lazyload{
+
+      background: #ededed;
+
+      &.loaded{ background: none}
+
+    }
+
+  }
+
+}
+
+
+
+.fixed-centered{
+
+  width: 100%;
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  z-index: 100;
+
+  transform: translate3d(-50%,-50%,0)
+
+}
+
+
+
+.page-hero{
+
+  float: left;
+
+  width: 100%;
+
+  height: 28vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: $color-secondary;
+
+  img{opacity: 0.2;}
+
+  h2{
+
+    position: absolute;
+
+    z-index: 10;
+
+    color: #fff;
+
+    text-align: center;
+
+
+  }
+
+}
+
+
+.row{
+
+  float: left;
+
+  width: 100%;
+
+  padding: 0 20px;
+
+  &.nopadding{padding: 0}
+
+}
+
+
+
+
+
+
+.faded {
+  transition: all 0.5s;
+
+}
+.faded-enter, .faded-leave-to
+  /* .card-leave-active for <2.1.8 */ {
+  opacity: 0;
+  /*transform: scale(0);*/
+}
+.faded-enter-to {
+  opacity: 1;
+  /*transform: scale(1);*/
+}
+
+.faded-leave-active {
+  /*position: absolute;*/
+}
+
+.faded-move {
+  opacity: 1;
+  transition: all 0.5s;
+}
