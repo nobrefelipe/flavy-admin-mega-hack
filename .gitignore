@@ -3,6 +3,7 @@ node_modules
 /dist
 
 firebaseConfig.js
+service-accout.json
 
 # local env files
 .env.local
