@@ -10,3 +10,6 @@ Com Flavy os clientes navegam pelo menu diretamente pelo smartphone, fazem o ped
 
 ![alt text](https://firebasestorage.googleapis.com/v0/b/flavy-app.appspot.com/o/Screenshot%202020-07-05%20at%2015.39.34.png?alt=media&token=5ff735b8-b55c-498a-b195-080757abf409)
 
+![alt text](https://firebasestorage.googleapis.com/v0/b/flavy-app.appspot.com/o/Screenshot%202020-07-05%20at%2015.42.48.png?alt=media&token=f8de99d3-9964-497b-b809-d6b964dd0b5f)
+
+
