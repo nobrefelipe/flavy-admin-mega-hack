@@ -1,5 +1,7 @@
 # Flavy Admin App (Mega Hack Shawee)
 
+Landing page do pojeto: https://flavyapp.now.sh
+
 Webapp desenvolvida no Hackaton da Shawee
 
 Flavy é uma webapp que visa trazer mais rapidez na hora de ordenar e pagar por comida e bebida em restaurantes e bares.
